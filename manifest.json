@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Font Text",
+  "version": "0.1",
+
+  "description": "Change the default text on fonts.google.com.",
+
+  "icons": {
+    "48": "icons/x48.png",
+    "64": "icons/x64.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.fonts.google.com/*"],
+      "js": ["text.js"]
+    }
+  ]
+
+}
